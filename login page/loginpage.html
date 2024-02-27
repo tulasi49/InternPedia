@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(35, 36, 42);
+        }
+        .container{
+            background-color:rgb(28, 28, 28);
+            padding: 20px;
+            height:600px;
+            width:500px;
+            font-size: 18px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 40% 0px;
+            border:2px solid black;
+            box-shadow: 1px 1px 1px 1px;
+        }
+        .container h1{
+            color:skyblue;
+            text-align: center;
+        }
+        .inputbox{
+            border-bottom: 2px solid skyblue;
+            margin: 30px 0px;
+            padding-left: 10px;
+        }
+        .inputbox input{
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            color: skyblue;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+        .FB{
+            display: flex;
+            justify-content: center;
+            color:rgb(133, 133, 133);
+        }
+        form a{
+            text-decoration: none;
+            color:rgb(3, 183, 254);
+        }
+        .login input{
+            width: 100%;
+            height:40px;
+            margin-top: 30px;
+            background-color: skyblue;
+            border-radius: 10px;
+            border: 0;
+            outline:0;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .para{
+           display: flex;
+           margin-top: 40px;
+           justify-content: center;
+           color: rgb(133, 133, 133);
+        }
+        .para a{
+            font-weight: 600;
+            color:rgb(2, 182, 253);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Sign In</h1>
+            <form action="#">
+                <div class="inputbox">
+                    <input type="text" name="I" placeholder="Phone number, Email or Username">
+                    <span></span>
+                </div>
+
+                <div class="inputbox">
+                    <input type="password" name="I" placeholder="Password">
+                </div>
+
+                <div class="FB">
+                    <p>Forgot Your Login Details?</p>
+                    <a href="#">Get Help Loggin In.</a>
+                </div>
+            
+                <div class="login">
+                    <input type="submit" value="Log In">
+                </div>    
+
+                <div class="para">
+                    <p>Don't have an account?</p>
+                    <a href="register.html">Sign Up.</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
