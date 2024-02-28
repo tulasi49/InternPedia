@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form id="cal">
+            <input type="text" name="result"> 
+            <input type="button" value="AC" class="ac" onclick="cal.result.value=' ' "> 
+            <input type="button" value="/" class="or" onclick="cal.result.value+='/' "> 
+            <input type="button" value="7"  class="number" onclick="cal.result.value+='7' ">
+            <input type="button" value="8" class="number" onclick="cal.result.value+='8' ">
+            <input type="button" value="9" class="number" onclick="cal.result.value+='9' "> 
+            <input type="button" value="X" class="or" onclick="cal.result.value+='*' "> 
+            <input type="button" value="4" class="number" onclick="cal.result.value+='4' "> 
+            <input type="button" value="5" class="number" onclick="cal.result.value+='5' "> 
+            <input type="button" value="6" class="number" onclick="cal.result.value+='6' "> 
+            <input type="button" value="-" class="or" onclick="cal.result.value+='-' "> 
+            <input type="button" value="1" class="number" onclick="cal.result.value+='1' ">
+            <input type="button" value="2" class="number" onclick="cal.result.value+='2' ">
+            <input type="button" value="3" class="number" onclick="cal.result.value+='3' "> 
+            <input type="button" value="+" class="or" onclick="cal.result.value+='+' "> 
+            <input type="button" value="0" class="zero" onclick="cal.result.value+='0' "> 
+            <input type="button" value="." class="number" onclick="cal.result.value+='.' ">
+            <input type="button" value="=" class="or" onclick="cal.result.value = eval(cal.result.value)">
+        </form>
+    </div>
+</body>
+</html>
